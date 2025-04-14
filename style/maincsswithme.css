@@ -1,0 +1,1507 @@
+/* 
+    CSS By Divesh Upadhyay (Happy)
+    Instagram: https://www.instagram.com/divshupadhyay/ 
+    Twitter: https://twitter.com/divshupadhyay 
+    Linkedin: https://www.linkedin.com/in/diveshupadhyay/	
+    */
+
+
+    :root {
+        --tomato: tomato;
+        --lime: lime;
+        --shadow: #333;
+        --wheat: wheat;
+        --white: #fff;
+        --gray: gray;
+        --dark: black;
+        --grass: #567d46;
+        --orange: orange;
+        --red: red;
+        --blue: blue;
+        --lightblue: DodgerBlue;
+        --lightgreen: MediumSeaGreen;
+        --smoke: whitesmoke;
+        --yellow: yellow;
+        --green: green;
+        --pink: pink;
+        --violet: violet;
+        --saffron: #f4c430;
+        --purple: purple;
+        --brown: brown;
+        --olivegreen: #376127;
+    
+        --container-m: 5px;
+        --container-p: 5px;
+        --1: 1%;
+        --2: 2%;
+        --3: 3%;
+        --4: 4%;
+        --5: 5%;
+        --6: 6%;
+        --7: 7%;
+        --8: 8%;
+        --9: 9%;
+        --10: 10%;
+        --circle: 50%;
+        --lg-1: 1em;
+        --lg-2: 2em;
+        --lg-3: 3em;
+        --shadow-0: 0px 0px 2px var(--shadow);
+        --shadow-1: 0px 0px 5px var(--shadow);
+        --shadow-2: 0px 0px 10px var(--shadow);
+        --shadow-3: 0px 0px 15px var(--shadow);
+    }
+    
+    /* text Color */
+    
+    .div-txt-tomato {
+        color: var(--tomato);
+    }
+    
+    .div-txt-lime {
+        color: var(--lime);
+    }
+    
+    .div-txt-shadow {
+        color: var(--shadow);
+    }
+    
+    .div-txt-wheat {
+        color: var(--wheat);
+    }
+    
+    .div-txt-default, .div-txt-white {
+        color: var(--white);
+    }
+    
+    .div-txt-gray {
+        color: var(--gray);
+    }
+    
+    .div-txt-dark {
+        color: var(--dark);
+    }
+    
+    .div-txt-orange {
+        color: var(--orange);
+    }
+    
+    .div-txt-grass {
+        color: var(--grass);
+    }
+    
+    .div-txt-red {
+        color: var(--red);
+    }
+    
+    .div-txt-smoke {
+        color: var(--smoke);
+    }
+    
+    .div-txt-blue {
+        color: var(--blue);
+    }
+    
+    .div-txt-lightblue {
+        color: var(--lightblue);
+    }
+    
+    .div-txt-lightgreen {
+        color: var(--lightgreen);
+    }
+    
+    .div-txt-yellow {
+        color: var(--yellow);
+    }
+    
+    .div-txt-green {
+        color: var(--green);
+    }
+    
+    .div-txt-pink {
+        color: var(--pink);
+    }
+    
+    .div-txt-violet {
+        color: var(--violet);
+    }
+    
+    .div-txt-saffron {
+        color: var(--saffron);
+    }
+    
+    .div-txt-purple {
+        color: var(--purple);
+    }
+    
+    .div-txt-brown {
+        color: var(--brown);
+    }
+    
+    .div-txt-olivegreen {
+        color: var(--olivegreen);
+    }
+    
+    
+    /* text Hover Color */
+    
+    .div-txt-hover-transparent:hover {
+        color: transparent;
+    }
+    
+    .div-txt-hover-tomato:hover {
+        color: var(--tomato);
+    }
+    
+    .div-txt-hover-lime:hover {
+        color: var(--lime);
+    }
+    
+    .div-txt-hover-shadow:hover {
+        color: var(--shadow);
+    }
+    
+    .div-txt-hover-wheat:hover {
+        color: var(--wheat);
+    }
+    
+    .div-txt-hover-default:hover,.div-txt-hover-white:hover {
+        color: var(--white);
+    }
+    
+    .div-txt-hover-gray:hover {
+        color: var(--gray);
+    }
+    
+    .div-txt-hover-dark:hover {
+        color: var(--dark);
+    }
+    
+    .div-txt-hover-orange:hover {
+        color: var(--orange);
+    }
+    
+    .div-txt-hover-grass:hover {
+        color: var(--grass);
+    }
+    
+    .div-txt-hover-red:hover {
+        color: var(--red);
+    }
+    
+    .div-txt-hover-smoke:hover {
+        color: var(--smoke);
+    }
+    
+    .div-txt-hover-blue:hover {
+        color: var(--blue);
+    }
+    
+    .div-txt-hover-lightblue:hover {
+        color: var(--lightblue);
+    }
+    
+    .div-txt-hover-lightgreen:hover {
+        color: var(--lightgreen);
+    }
+    
+    .div-txt-hover-yellow:hover {
+        color: var(--yellow);
+    }
+    
+    .div-txt-hover-green:hover {
+        color: var(--green);
+    }
+    
+    .div-txt-hover-pink:hover {
+        color: var(--pink);
+    }
+    
+    .div-txt-hover-violet:hover {
+        color: var(--violet);
+    }
+    
+    .div-txt-hover-saffron:hover {
+        color: var(--saffron);
+    }
+    
+    .div-txt-hover-purple:hover {
+        color: var(--purple);
+    }
+    
+    .div-txt-hover-brown:hover {
+        color: var(--brown);
+    }
+    
+    .div-txt-hover-olivegreen:hover {
+        color: var(--olivegreen);
+    }
+    
+    /* text-center */
+    .div-txt-center {
+        text-align: center;
+    }
+    
+    .div-txt-left {
+        text-align: left;
+        float: left;
+    }
+    
+    .div-txt-right {
+        text-align: right;
+        float: right;
+    }
+    
+    /* text decoration */
+    .div-txt-underline {
+        text-decoration: underline;
+    }
+    
+    .div-txt-overline {
+        text-decoration: overline;
+    }
+    
+    .div-txt-linethrough {
+        text-decoration: line-through;
+    }
+    
+    /* text shadow */
+    
+    .div-txt-shadow-0 {
+        text-shadow: var(--shadow-0);
+    }
+    
+    .div-txt-shadow-1 {
+        text-shadow: var(--shadow-1);
+    }
+    
+    .div-txt-shadow-2 {
+        text-shadow: var(--shadow-2);
+    }
+    
+    .div-txt-shadow-3 {
+        text-shadow: var(--shadow-3);
+    }
+    
+    /* text background color */
+    
+    .div-bg-transparent {
+        background-color: transparent;
+    }
+    
+    .div-bg-tomato {
+        background-color: var(--tomato);
+    }
+    
+    .div-
+    
+    /* text font family */
+    .div-txt-cursive {
+        font-family: cursive;
+    }
+    
+    .div-txt-monospace {
+        font-family: monospace;
+    }
+    
+    /* text italic/bold */
+    .div-txt-bold {
+        font-weight: bold;
+    }
+    
+    .div-txt-italic {
+        font-style: italic;
+    }
+    
+    /* text size */
+    
+    .div-txt-1 {
+        font-size: var(--1);
+    }
+    
+    .div-txt-2 {
+        font-size: var(--2);
+    }
+    
+    .div-txt-3 {
+        font-size: var(--3);
+    }
+    
+    .div-txt-4 {
+        font-size: var(--4);
+    }
+    
+    .div-txt-5 {
+        font-size: var(--5);
+    }
+    
+    .div-txt-6 {
+        font-size: var(--6);
+    }
+    
+    .div-txt-7 {
+        font-size: var(--7);
+    }
+    
+    .div-txt-8 {
+        font-size: var(--8);
+    }
+    
+    .div-txt-9 {
+        font-size: var(--9);
+    }
+    
+    .div-txt-10 {
+        font-size: var(--10);
+    }
+    
+    /* Background Color */
+    
+    .div-bg-tomato {
+        background: var(--tomato);
+    }
+    
+    .div-bg-lime {
+        background: var(--lime);
+    }
+    
+    .div-bg-shadow {
+        background: var(--shadow);
+    }
+    
+    .div-bg-wheat {
+        background: var(--wheat);
+    }
+    
+    
+    .div-bg-default,.div-bg-white {
+        background: var(--white);
+    }
+    
+    .div-bg-gray {
+        background: var(--gray);
+    }
+    
+    .div-bg-dark {
+        background: var(--dark);
+    }
+    
+    .div-bg-grass {
+        background: var(--grass);
+    }
+    
+    .div-bg-orange {
+        background: var(--orange);
+    }
+    
+    .div-bg-red {
+        background: var(--red);
+    }
+    
+    .div-bg-smoke {
+        background: var(--smoke);
+    }
+    
+    .div-bg-blue {
+        background: var(--blue);
+    }
+    
+    .div-bg-lightblue {
+        background: var(--lightblue);
+    }
+    
+    .div-bg-lightgreen {
+        background: var(--lightgreen);
+    }
+    
+    .div-bg-yellow {
+        background: var(--yellow);
+    }
+    
+    .div-bg-green {
+        background: var(--green);
+    }
+    
+    .div-bg-pink {
+        background: var(--pink);
+    }
+    
+    .div-bg-violet {
+        background: var(--violet);
+    }
+    
+    .div-bg-saffron {
+        background: var(--saffron);
+    }
+    
+    .div-bg-purple {
+        background: var(--purple);
+    }
+    
+    .div-bg-brown {
+        background: var(--brown);
+    }
+    
+    .div-bg-olivegreen {
+        background: var(--olivegreen);
+    }
+
+    /* bg hover */
+    .div-bg-hover-green:hover {
+        background: var(--green);
+    }
+    
+    .div-bg-hover-tomato:hover {
+        background: var(--tomato);
+    }
+    
+    .div-bg-hover-lime:hover {
+        background: var(--lime);
+    }
+    
+    .div-bg-hover-shadow:hover {
+        background: var(--shadow);
+    }
+    
+    .div-bg-hover-wheat:hover {
+        background: var(--wheat);
+    }
+    
+    .div-bg-hover-white:hover {
+        background: var(--white);
+    }
+    
+    .div-bg-hover-gray:hover {
+        background: var(--gray);
+    }
+    
+    .div-bg-hover-dark:hover {
+        background: var(--dark);
+    }
+    
+    .div-bg-hover-grass:hover {
+        background: var(--grass);
+    }
+    
+    .div-bg-hover-orange:hover {
+        background: var(--orange);
+    }
+    
+    .div-bg-hover-red:hover {
+        background: var(--red);
+    }
+    
+    .div-bg-hover-blue:hover {
+        background: var(--blue);
+    }
+    
+    .div-bg-hover-lightblue:hover {
+        background: var(--lightblue);
+    }
+    
+    .div-bg-hover-lightgreen:hover {
+        background: var(--lightgreen);
+    }
+    
+    .div-bg-hover-smoke:hover {
+        background: var(--smoke);
+    }
+    
+    .div-bg-hover-yellow:hover {
+        background: var(--yellow);
+    }
+    
+    .div-bg-hover-pink:hover {
+        background: var(--pink);
+    }
+    
+    .div-bg-hover-violet:hover {
+        background: var(--violet);
+    }
+    
+    .div-bg-hover-transparent:hover {
+        background: transparent;
+    }
+    
+    .div-bg-hover-saffron:hover {
+        background: var(--saffron);
+    }
+    
+    .div-bg-hover-purple:hover {
+        background: var(--purple);
+    }
+    
+    .div-bg-hover-brown:hover {
+        background: var(--brown);
+    }
+    
+    .div-bg-hover-olivegreen:hover {
+        background: var(--olivegreen);
+    }
+
+    
+    /* border */
+    .div-border {
+        border: solid var(--dark);
+    }
+    
+    .div-border-solid {
+        border-style: solid;
+    }
+    
+    .div-border-dotted {
+        border-style: dotted;
+    }
+    
+    .div-border-dashed {
+        border-style: dashed;
+    }
+    
+    .div-border-double {
+        border-style: double;
+    }
+    
+    .div-border-none {
+        border-style: none;
+    }
+    
+    .div-border-dark {
+        border: solid var(--dark);
+    }
+    
+    .div-border-white {
+        border: solid var(--white);
+    }
+    
+    .div-border-tomato {
+        border: solid var(--tomato);
+    }
+    
+    .div-border-lime {
+        border: solid var(--lime);
+    }
+    
+    .div-border-shadow {
+        border: solid var(--shadow);
+    }
+    
+    .div-border-wheat {
+        border: solid var(--wheat);
+    }
+    
+    .div-border-gray {
+        border: solid var(--gray);
+    }
+    
+    .div-border-grass {
+        border: solid var(--grass);
+    }
+    
+    .div-border-orange {
+        border: solid var(--orange);
+    }
+    
+    .div-border-red {
+        border: solid var(--red);
+    }
+    
+    .div-border-blue {
+        border: solid var(--blue);
+    }
+    
+    .div-border-lightblue {
+        border: solid var(--lightblue);
+    }
+    
+    .div-border-lightgreen {
+        border: solid var(--lightgreen);
+    }
+    
+    .div-border-smoke {
+        border: solid var(--smoke);
+    }
+    
+    .div-border-yellow {
+        border: solid var(--yellow);
+    }
+    
+    .div-border-green {
+        border: solid var(--green);
+    }
+    
+    .div-border-pink {
+        border: solid var(--pink);
+    }
+    
+    .div-border-violet {
+        border: solid var(--violet);
+    }
+    
+    .div-border-transparent {
+        border: solid transparent;
+    }
+    
+    /* Border-radius */
+    .div-border-r-sm {
+        border-radius: 5px;
+    }
+    
+    .div-border-r-md {
+        border-radius: 10px;
+    }
+    
+    .div-border-r-lg {
+        border-radius: 20px;
+    }
+    
+    .div-border-r-1 {
+        border-radius: var(--2);
+    }
+    
+    .div-border-r-2 {
+        border-radius: var(--4);
+    }
+    
+    .div-border-r-3 {
+        border-radius: var(--6);
+    }
+    
+    .div-border-r-4 {
+        border-radius: var(--8);
+    }
+    
+    .div-border-r-5 {
+        border-radius: var(--10);
+    }
+    
+    .div-circle {
+    border-radius: var(--circle);
+    }
+    
+    .div-circle-hover:hover {
+    border-radius: var(--circle);
+    }
+    
+    /* Container
+    .div-container {
+    height: auto;
+    margin: var(--container-m);
+    padding: var(--container-p);
+    display: block;} */
+    
+    .div-container-dark {
+    height: auto;
+    background: var(--dark);
+    margin: var(--container-m);
+    padding: var(--container-p);
+    }
+    
+    .div-container-white {
+        height: auto;
+        background: var(--white);
+        margin: var(--container-m);
+        padding: var(--container-p);
+    }
+    
+    .div-container-tomato {
+        height: auto;
+        background: var(--tomato);
+        margin: var(--container-m);
+        padding: var(--container-p);
+    }
+    
+    .div-container-lime {
+        height: auto;
+        background: var(--lime);
+        margin: var(--container-m);
+        padding: var(--container-p);
+    }
+    
+    .div-container-shadow {
+        height: auto;
+        background: var(--shadow);
+        margin: var(--container-m);
+        padding: var(--container-p);
+    }
+    
+    .div-container-wheat {
+        height: auto;
+        background: var(--wheat);
+        margin: var(--container-m);
+        padding: var(--container-p);
+    }
+    
+    .div-container-white {
+        height: auto;
+        background: var(--white);
+        margin: var(--container-m);
+        padding: var(--container-p);
+    }
+    
+    .div-container-gray {
+        height: auto;
+        background: var(--gray);
+        margin: var(--container-m);
+        padding: var(--container-p);
+    }
+    
+    .div-container-dark {
+        height: auto;
+        background: var(--dark);
+        margin: var(--container-m);
+        padding: var(--container-p);
+    }
+    
+    .div-container-grass {
+        height: auto;
+        background: var(--grass);
+        margin: var(--container-m);
+        padding: var(--container-p);
+    }
+    
+    .div-container-orange {
+        height: auto;
+        background: var(--orange);
+        margin: var(--container-m);
+        padding: var(--container-p);
+    }
+    
+    .div-container-red {
+        height: auto;
+        background: var(--red);
+        margin: var(--container-m);
+        padding: var(--container-p);
+    }
+    
+    .div-container-blue {
+        height: auto;
+        background: var(--blue);
+        margin: var(--container-m);
+        padding: var(--container-p);
+    }
+    
+    .div-container-lightblue {
+        height: auto;
+        background: var(--lightblue);
+        margin: var(--container-m);
+        padding: var(--container-p);
+    }
+    
+    .div-container-lightgreen {
+        height: auto;
+        background: var(--lightgreen);
+        margin: var(--container-m);
+        padding: var(--container-p);
+    }
+    
+    .div-container-smoke {
+        height: auto;
+        background: var(--smoke);
+        margin: var(--container-m);
+        padding: var(--container-p);
+    }
+    
+    .div-container-yellow {
+        height: auto;
+        background: var(--yellow);
+        margin: var(--container-m);
+        padding: var(--container-p);
+    }
+    
+    .div-container-green {
+        height: auto;
+        background: var(--green);
+        margin: var(--container-m);
+        padding: var(--container-p);
+    }
+    
+    .div-container-pink {
+        height: auto;
+        background: var(--pink);
+        margin: var(--container-m);
+        padding: var(--container-p);
+    }
+    
+    .div-container-violet {
+        height: auto;
+        background: var(--violet);
+        margin: var(--container-m);
+        padding: var(--container-p);
+    }
+    
+    .div-container-transparent {
+        height: auto;
+        background: transparent;
+        margin: var(--container-m);
+        padding: var(--container-p);
+    }
+    
+    /* Flexbox */
+    .div-flex {
+        display: flex;
+    }
+    
+    .div-flex-row {
+        flex-direction: row;
+    }
+    
+    .div-flex-column {
+        flex-direction: column;
+    }
+    
+    .div-flex-wrap {
+        flex-wrap: wrap;
+    }
+    
+    .div-flex-center {
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .div-flex-space-between {
+        justify-content: space-between;
+    }
+    
+    .div-flex-space-around {
+        justify-content: space-around;
+    }
+    
+    .div-flex-space-evenly {
+        justify-content: space-evenly;
+    }
+    
+    .div-flex-grow-0 {
+        flex-grow: 0;
+    }
+    
+    .div-flex-shrink-0 {
+        flex-shrink: 0;
+    }
+    
+    .div-flex-basis-auto {
+        flex-basis: auto;
+    }
+    
+    .div-flex-grow-1 {
+        flex-grow: 1;
+    }
+    
+    .div-flex-shrink-1 {
+        flex-shrink: 1;
+    }
+    
+    .div-flex-basis-content {
+        flex-basis: content;
+    }
+    
+    /* Grid */
+    
+    .div-grid {
+        display: grid;
+    }
+    
+    .div-grid-auto-flow-row {
+        grid-auto-flow: row;
+    }
+    
+    .div-grid-auto-flow-column {
+        grid-auto-flow: column;
+    }
+    
+    .div-grid-auto-flow-row-reverse {
+        grid-auto-flow: row-reverse;
+    }
+    
+    .div-grid-auto-flow-column-reverse {
+        grid-auto-flow: column-reverse;
+    }
+    
+    .div-grid-auto-rows-auto {
+        grid-auto-rows: auto;
+    }
+    
+    .div-grid-auto-rows-minmax {
+        grid-auto-rows: minmax(auto, 1fr);
+    }
+    
+    .div-grid-auto-rows-fit-content {
+        grid-auto-rows: fit-content(auto);
+    }
+    
+    .div-grid-auto-cols-auto {
+        grid-auto-columns: auto;
+    }
+    
+    .div-grid-auto-cols-minmax {
+        grid-auto-columns: minmax(auto, 1fr);
+    }
+    
+    .div-grid-auto-cols-fit-content {
+        grid-auto-columns: fit-content(auto);
+    }
+    
+    .div-grid-gap-0 {
+        grid-gap: 0;
+    }
+    
+    .div-grid-gap-1 {
+        grid-gap: 1rem;
+    }
+    
+    .div-grid-gap-2 {
+        grid-gap: 2rem;
+    }
+    
+    .div-grid-gap-3 {
+        grid-gap: 3rem;
+    }
+    
+    .div-grid-auto-flow-dense {
+        grid-auto-flow: dense;
+    }
+    
+    .div-grid-template-rows-auto {
+        grid-template-rows: auto;
+    }
+    
+    .div-grid-template-rows-minmax {
+        grid-template-rows: minmax(auto, 1fr);
+    }
+    
+    .div-grid-template-rows-fit-content {
+        grid-template-rows: fit-content(auto);
+    }
+    
+    .div-grid-template-columns-auto {
+        grid-template-columns: auto;
+    }
+    
+    /* Fixed Position */
+    .div-fixed {
+        position: fixed;
+    }
+    
+    /* Fixed to the top of the viewport */
+    .div-fixed-top {
+        position: fixed;
+        top: 0;
+    }
+    
+    /* Fixed to the bottom of the viewport */
+    .div-fixed-bottom {
+        position: fixed;
+        bottom: 0;
+    }
+    
+    /* Fixed to the right side of the viewport */
+    .div-fixed-right {
+        position: fixed;
+        right: 0;
+    }
+    
+    /* Fixed to the left side of the viewport */
+    .div-fixed-left {
+        position: fixed;
+        left: 0;
+    }
+    
+    /* Absolute Position */
+    
+    .div-absolute {
+        position: absolute;
+    }
+    
+    /* Relative Position */
+    
+    .div-relative {
+        position: relative;
+    }
+    
+    /* Overflow */
+    
+    .div-overflow-x {
+        overflow-x: auto;
+    }
+    
+    .div-overflow-y {
+        overflow-y: auto;
+    }
+    
+    .div-overflow-hidden {
+        overflow: hidden;
+    }
+    
+    /* Display */
+    
+    .div-flex {
+        display: flex;
+    }
+    
+    .div-hide {
+        display: none;
+    }
+    
+    .div-grid {
+        display: grid;
+    }
+    
+    /* Heading element */
+    
+    div h1,
+     .div-h1 {
+        font-size: 36px;
+        font-family: cursive, sans-serif;
+    }
+    
+    div h2,
+     .div-h2 {
+        font-size: 30px;
+        font-family: cursive, sans-serif;
+    }
+    
+    div h3,
+     .div-h3 {
+        font-size: 24px;
+        font-family: cursive, sans-serif;
+    }
+    
+    div h4,
+     .div-h4 {
+        font-size: 20px;
+        font-family: cursive, sans-serif;
+    }
+    
+    div h5,
+     .div-h5 {
+        font-size: 18px;
+        font-family: cursive, sans-serif;
+    }
+    
+    div h6,
+     .div-h6 {
+        font-size: 16px;
+        font-family: cursive, sans-serif;
+    }
+    
+    /* margin */
+    
+    .m-auto {
+        margin: auto;
+    }
+    
+    .m-1 {
+        margin: var(--1);
+    }
+    
+    .m-2 {
+        margin: var(--2);
+    }
+    
+    .m-3 {
+        margin: var(--3);
+    }
+    
+    .m-4 {
+        margin: var(--4);
+    }
+    
+    .m-5 {
+        margin: var(--5);
+    }
+    
+    .m-6 {
+        margin: var(--6);
+    }
+    
+    .m-7 {
+        margin: var(--7);
+    }
+    
+    .m-8 {
+        margin: var(--8);
+    }
+    
+    .m-9 {
+        margin: var(--9);
+    }
+    
+    .m-10 {
+        margin: var(--10);
+    }
+    
+    .m-sh-1 {
+        margin: 2px;
+    }
+    
+    .m-sh-2 {
+        margin: 5px;
+    }
+    
+    .m-sh-3 {
+        margin: 10px;
+    }
+    
+    /* margin large */
+    
+    .m-lg-1 {
+        margin: var(--lg-1);
+    }
+    
+    .m-lg-2 {
+        margin: var(--lg-2);
+    }
+    
+    .m-lg-3 {
+        margin: var(--lg-3);
+    }
+    
+    /* Padding */
+    .p-1 {
+        padding: var(--1);
+    }
+    
+    .p-2 {
+        padding: var(--2);
+    }
+    
+    .p-3 {
+        padding: var(--3);
+    }
+    
+    .p-4 {
+        padding: var(--4);
+    }
+    
+    .p-5 {
+        padding: var(--5);
+    }
+    
+    .p-6 {
+        padding: var(--6);
+    }
+    
+    .p-7 {
+        padding: var(--7);
+    }
+    
+    .p-8 {
+        padding: var(--8);
+    }
+    
+    .p-9 {
+        padding: var(--9);
+    }
+    
+    .p-10 {
+        padding: var(--10);
+    }
+    
+    /* padding short */
+    .p-sh-1 {
+        padding: 2px;
+    }
+    
+    .p-sh-2 {
+        padding: 5px;
+    }
+    
+    .p-sh-3 {
+        padding: 10px;
+    }
+    
+    /* padding Large */
+    .p-lg-1 {
+        padding: var(--lg-1);
+    }
+    
+    .p-lg-2 {
+        padding: var(--lg-2);
+    }
+    
+    .p-lg-3 {
+        padding: var(--lg-3);
+    }
+    
+    /* Quotes */
+    .quote{
+        font-style: oblique;
+    }
+    .quote::before{
+        content: '"';
+    }
+    .quote::after{
+        content: '"';
+    }
+    
+    
+    /* shadow */
+    .shadow {
+        box-shadow: var(--shadow-0);
+    }
+    
+    .shadow-1 {
+        box-shadow: var(--shadow-1);
+    }
+    
+    .shadow-2 {
+        box-shadow: var(--shadow-2);
+    }
+    
+    .shadow-3 {
+        box-shadow: var(--shadow-3);
+    }
+    
+    /* shadow on hover */
+    .shadow-hover:hover {
+        box-shadow: var(--shadow-0);
+    }
+    
+    .shadow-hover-1:hover {
+        box-shadow: var(--shadow-1);
+    }
+    
+    .shadow-hover-2:hover {
+        box-shadow: var(--shadow-2);
+    }
+    
+    .shadow-hover-3:hover {
+        box-shadow: var(--shadow-3);
+    }
+    
+    /* sticky position*/
+    .sticky-top{
+        position: sticky;
+        top: 0;
+    }
+    .sticky-bottom{
+        position: sticky;
+        bottom: 0;
+    }
+    .sticky-left{
+        position: sticky;
+        left: 0;
+    }
+    .sticky-right{
+        position: sticky;
+        right: 0;
+    }
+    
+    /* responsive design for screens larger than 1024px */
+    
+    @media (min-width: 1024px) {
+        .div-container {
+            padding: 2rem;
+        }
+    }
+    
+    /* responsive design */
+    @media (prefers-color-scheme: light) {
+        body {
+            background-color: var(--light);
+            color: var(--dark);
+        }
+    }
+    
+    @media (prefers-color-scheme: dark) {
+        body {
+            background-color: var(--dark);
+            color: var(--light);
+        }
+    }
+    
+    /* responsive design for screens smaller than 768px */
+    
+    @media (max-width: 768px) {
+        .div-container {
+            padding: 1rem;
+        }
+    }
+    
+    /* responsive design for screens smaller than 576px */
+    
+    @media (max-width: 576px) {
+        .div-container {
+            padding: 0.5rem;
+        }
+    }
+    
+    /* responsive design for screens smaller than 320px */
+    
+    @media (max-width: 320px) {
+        .div-container {
+            padding: 0.25rem;
+        }
+    }
+    
+    /* responsive design for screens smaller than 200px */
+    
+    @media (max-width: 200px) {
+        .div-container {
+            padding: 0.1rem;
+        }
+    }
+    
+    /* responsive design for screens smaller than 100px */
+    
+    @media (max-width: 100px) {
+        .div-container {
+            padding: 0;
+        }
+    }
+    
+    /* responsive design for screens smaller than 600px */
+    
+    @media (max-width: 600px) {
+        .div-container {
+            margin: 1rem;
+        }
+    }
+    
+    /* responsive design for screens smaller than 480px */
+    
+    @media (max-width: 480px) {
+        .div-container {
+            margin: 0.5rem;
+        }
+    }
+    
+    /* responsive design for screens smaller than 360px */
+    
+    @media (max-width: 360px) {
+        .div-container {
+            margin: 0.25rem;
+        }
+    }
+    
+    /* responsive design for screens smaller than 240px */
+    
+    @media (max-width: 240px) {
+        .div-container {
+            margin: 0.1rem;
+        }
+    }
+    
+    /* responsive design for screens smaller than 180px */
+    
+    @media (max-width: 180px) {
+        .div-container {
+            margin: 0;
+        }
+    }
+    
+    /* responsive design for screens smaller than 120px */
+    
+    @media (max-width: 120px) {
+        .div-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+    
+        .div-flex {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+    
+    /* responsive design for screens smaller than 80px */
+    
+    @media (max-width: 80px) {
+        .div-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+    
+        .div-flex {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+    
+    /* responsive design for screens smaller than 60px */
+    
+    @media (max-width: 60px) {
+        .div-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+    
+        .div-flex {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+    
+    /* responsive design for screens smaller than 48px */
+    
+    @media (max-width: 48px) {
+        .div-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+    
+        .div-flex {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+    
+    /* responsive design for screens smaller than 36px */
+    
+    @media (max-width: 36px) {
+        .div-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+    
+        .div-flex {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+    
+    /* responsive design for screens smaller than 24px */
+    
+    @media (max-width: 24px) {
+        .div-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+    
+        .div-flex {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+    
+    
+    

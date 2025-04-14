@@ -1,1 +1,335 @@
+/* styles.css */
 
+/* Define theme colors */
+:root {
+    --color-white: #ffffff; /* White */
+    --color-black: #000000; /* Black */
+    --color-green: #4CAF50; /* Green */
+    --color-yellow: #FFEB3B; /* Yellow */
+    --color-orange: #FF9800; /* Orange */
+    --color-blue: #2196F3; /* Blue */
+    --color-purple: #9C27B0; /* Purple */
+    --color-red: #FF5722; /* Red */
+    --color-gray: #f0f0f0; /* Light Gray */
+}
+
+/* Basic styles for the body */
+body {
+    font-family: 'Arial', sans-serif; /* Consider using a web font */
+    margin: 0;
+    padding: 0;
+    background-color: var(--color-white); /* Set background to white */
+}
+
+/* Header styles */
+header {
+    background-color: var(--color-black); /* Header background color */
+    color: var(--color-white); /* Header text color */
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 20px 0; /* Space above and below the website name */
+    letter-spacing: 1px; /* Optional: Add letter spacing for a more spacious look */
+}
+
+/* Notification bar styles */
+.notification-bar {
+    background-color: var(--color-orange);
+    color: var(--color-white);
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* Navigation styles */
+nav {
+    background-color: var(--color-green); /* Navigation background color */
+    padding: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Add shadow for depth */
+}
+
+nav ul {
+    list-style: none; /* Remove bullet points */
+    padding: 0; /* Remove padding */
+    display: flex; /* Use flexbox for layout */
+    justify-content: center; /* Center the navigation items */
+    margin: 0; /* Remove default margin */
+}
+
+nav ul li {
+    margin: 0 15px; /* Space between navigation items */
+}
+
+nav a {
+    color: var(--color-white); /* Navigation link color */
+    text-decoration: none; /* Remove underline */
+    font-weight: bold; /* Bold text */
+    padding: 10px 15px; /* Add padding for clickable area */
+    border-radius: 5px; /* Rounded corners for links */
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition */
+}
+
+nav a:hover,
+nav a:focus {
+    background-color: var(--color-yellow); /* Change background color on hover */
+    color: var(--color-black); /* Change text color on hover */
+    outline: none; /* Remove default outline */
+}
+
+/* Main container styles */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+/* User profile styles */
+.user-profile {
+    background-color: var(--color-green); /* Background color for the user profile */
+    color: var(--color-white); /* Text color */
+    padding: 20px; /* Padding around the text */
+    border-radius: 10px; /* Rounded corners */
+    margin: 20px 0; /* Margin above and below */
+}
+
+.profile-info {
+    display: flex; /* Flexbox for layout */
+    align-items: center; /* Center items vertically */
+}
+
+.profile-avatar {
+    border-radius: 50%; /* Circular avatar */
+    width: 100px; /* Avatar width */
+    height: 100px; /* Avatar height */
+    margin-right: 20px; /* Space between avatar and text */
+}
+
+.user-info {
+    flex: 1; /* Allow user info to take remaining space */
+}
+
+.username-label {
+    font-weight: bold; /* Bold for the label */
+    font-size: 1.2em; /* Larger font size for the label */
+}
+
+.username-value {
+    font-weight: normal; /* Normal weight for the username */
+    font-size: 1.2em; /* Larger font size for the username */
+}
+
+.user-description {
+    margin-top: 5px; /* Space above the description */
+    font-size: 0.9em; /* Smaller font size for the description */
+    color: var(--color-yellow); /* Yellow color for the description */
+}
+
+/* Edit profile styles */
+.edit-profile {
+    background-color: var(--color-white); /* Background color for the edit form */
+    color: var(--color-black); /* Text color */
+    padding: 20px; /* Padding around the form */
+    border-radius: 10px; /* Rounded corners */
+    margin-top: 20px; /* Space above the edit form */
+}
+
+.edit-profile label {
+    display: block; /* Make labels block elements */
+    margin: 10px 0 5px; /* Space around labels */
+}
+
+.edit-profile input {
+    width: 100%; /* Full width for inputs */
+    padding: 10px; /* Padding inside inputs */
+    margin-bottom: 15px; /* Space below inputs */
+    border: 1px solid var(--color-gray); /* Border for inputs */
+    border-radius: 5px; /* Rounded corners for inputs */
+}
+
+.edit-profile button {
+    margin-right: 10px; /* Space between buttons */
+}
+
+/* Offers section styles */
+.offers {
+    background-color: var(--color-gray);
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px 0;
+    text-align: center;
+}
+
+.offer {
+    margin: 15px 0;
+    padding: 15px;
+    border: 1px solid var(--color-green);
+    border-radius: 5px;
+    background-color: var(--color-white);
+}
+
+.offer h3 {
+    color: var(--color-green);
+}
+
+.offer p {
+    font-size: 1.1em;
+    margin: 10px 0;
+}
+
+/* Template list styles */
+.template-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.template {
+    border: 1px solid var(--color-green);
+    border-radius: 10px; /* More rounded corners */
+    padding: 15px;
+    margin: 10px;
+    width: 300px; /* Fixed width for templates */
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Deeper shadow for depth */
+    transition: transform 0.2s, box-shadow 0.2s; /* Add transition for hover effect */
+}
+
+.template:hover {
+    transform: translateY(-5px); /* Lift effect on hover */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3); /* Darker shadow on hover */
+}
+
+.template h3 {
+    margin-top: 10px; /* Space above the template title */
+    margin-bottom: 5px; /* Space below the template title */
+}
+
+.template p {
+    margin: 5px 0; /* Vertical spacing for description and price */
+}
+
+.template svg {
+    max-width: 100%; /* Responsive SVG */
+    height: auto;
+}
+
+.price {
+    font-size: 1.5em;
+    color: var(--color-green);
+}
+
+/* Coupon styles */
+.coupon {
+    margin: 20px 0;
+    text-align: center;
+}
+
+.coupon input {
+    padding: 10px;
+    border: 1px solid var(--color-gray);
+    border-radius: 5px;
+    width: 200px; /* Fixed width for input */
+}
+
+.coupon button {
+    margin-left: 10px; /* Space between input and button */
+}
+
+/* Button styles */
+.btn {
+    background-color: var(--color-green);
+    color: var(--color-white);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s, box-shadow 0.2s; /* Add transition */
+}
+
+.btn:hover {
+    background-color: var(--color-yellow);
+    transform: scale(1.05); /* Slightly enlarge the button on hover */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Add shadow on hover */
+}
+
+/* Footer styles */
+footer {
+    background-color: var(--color-black); /* Footer background color */
+    color: var(--color-white); /* Footer text color */
+    padding: 20px;
+    text-align: center;
+}
+
+footer .footer-content {
+    display: flex;
+    justify-content: space-around; /* Space out footer content */
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+    margin-bottom: 20px; /* Space below footer content */
+}
+
+footer .footer-content div {
+    margin: 10px;
+    flex: 1;
+    min-width: 200px; /* Minimum width for footer items */
+}
+
+footer .footer-content div h3 {
+    margin-bottom: 15px; /* Increase space below section titles */
+    font-size: 1.2em; /* Slightly larger font for section titles */
+}
+
+footer .footer-content div p,
+footer .footer-content div ul {
+    margin-bottom: 10px; /* Space below paragraphs and lists */
+    font-size: 0.9em; /* Smaller font size for footer text */
+}
+
+footer .footer-content div ul {
+    list-style: none; /* Remove bullet points */
+    padding: 0; /* Remove padding */
+}
+
+footer .footer-content div ul li {
+    margin: 5px 0; /* Space between list items */
+}
+
+footer .footer-content div ul li a {
+    color: var(--color-white); /* Link color */
+    text-decoration: none; /* Remove underline */
+    transition: color 0.3s; /* Smooth transition for color */
+}
+
+footer .footer-content div ul li a:hover {
+    color: var(--color-yellow); /* Change color on hover */
+}
+
+/* Social icons styles */
+.social-icons a {
+    margin: 0 10px;
+    color: var(--color-white); /* Social icon color */
+    text-decoration: none;
+    font-weight: bold; /* Bold text for social links */
+    transition: color 0.3s; /* Smooth transition for color */
+}
+
+.social-icons a:hover {
+    color: var(--color-yellow); /* Change color on hover */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column; /* Stack navigation links vertically */
+        align-items: center; /* Center items */
+    }
+    .footer-content {
+        flex-direction: column; /* Stack footer content vertically */
+        align-items: center; /* Center items */
+    }
+    .footer-content div {
+        margin-bottom: 20px; /* Space between footer items */
+    }
+}
