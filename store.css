@@ -1,0 +1,142 @@
+/* store.css */
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    height: 1500px;
+    margin: 0;
+    font-family: "Raleway", sans-serif;
+    background: linear-gradient(to right, orange 0%, white 50%, green 100%);
+    color: #333; /* Set a default text color for better readability */
+}
+
+/* Hide slides by default */
+.mySlides {
+    display: none;
+}
+
+/* Responsive grid layout */
+.column {
+    float: left;
+    width: 25%;
+    padding: 10px;
+    transition: transform 0.3s; /* Add transition for scaling effect */
+}
+
+.column:hover {
+    transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+/* Style the images inside the grid */
+.column img {
+    width: 100%; /* Ensure images are responsive */
+    border-radius: 10px; /* Add rounded corners to images */
+    opacity: 0.8; 
+    cursor: pointer; 
+    transition: opacity 0.3s; /* Smooth transition for opacity */
+}
+
+.column img:hover {
+    opacity: 1;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* The expanding image container */
+.container {
+    position: relative;
+    display: none;
+}
+
+/* Expanding image text */
+#imgtext {
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    color: white;
+    font-size: 20px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7); /* Add text shadow for better visibility */
+}
+
+/* Closable button inside the expanded image */
+.closebtn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    color: white;
+    font-size: 35px;
+    cursor: pointer;
+}
+
+/* Button styles */
+.w3-button {
+    transition: background-color 0.3s, transform 0.2s;
+    border-radius: 5px; /* Add rounded corners to buttons */
+}
+
+.w3-button:hover {
+    background-color: #555; /* Darker shade on hover */
+    transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+/* Avatar styles */
+.avatar {
+    vertical-align: middle;
+    width: 95px;
+    height: 95px;
+    border-radius: 50%; /* Use 50% for perfect circles */
+}
+
+.avataradmin {
+    vertical-align: middle;
+    width: 75px;
+    height: 75px;
+    border-radius: 50%; /* Use 50% for perfect circles */
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+    .column {
+        width: 50%; /* Two columns on medium screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .column {
+        width: 100%; /* One column on small screens */
+    }
+}
+
+/* Additional styles for better user experience */
+h1, h2, h3, h4, h5, h6 {
+    margin: 20px 0; /* Add margin for headings */
+}
+
+.container {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow to the container */
+    border-radius: 10px; /* Round corners for the container */
+    overflow: hidden; /* Ensure child elements don't overflow */
+}
+
+/* Footer styles */
+footer {
+    background-color: rgba(0, 0, 0, 0.8); /* Dark background for footer */
+    color: white; /* White text for contrast */
+    padding: 20px 0; /* Padding for footer */
+}
+
+footer a {
+    color: #ffcc00; /* Highlight footer links */
+    text-decoration: none; /* Remove underline */
+}
+
+footer a:hover {
+    text-decoration: underline; /* Underline on hover */
+}

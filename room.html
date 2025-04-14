@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebSocket Example</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        #messages {
+            border: 1px solid #ccc;
+            height: 200px;
+            overflow-y: scroll;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>WebSocket Example</h1>
+    <div id="messages"></div>
+    <input type="text" id="messageInput" placeholder="Type a message..." />
+    <button id="sendButton">Send</button>
+
+    <script>
+        const messagesDiv = document.getElementById('messages');
+        const messageInput = document.getElementById('messageInput');
+        const sendButton = document.getElementById('sendButton');
+
+        const socket = new WebSocket('ws://localhost:8080');
+
+        socket.addEventListener('open', () => {
+            console.log('Connected to the WebSocket server');
+        });
+
+        socket.addEventListener('message', (event) => {
+            const message = document.createElement('div');
+            message.textContent = event.data;
+            messagesDiv.appendChild(message);
+        });
+
+        sendButton.addEventListener('click', () => {
+            const message = messageInput.value;
+            socket.send(message);
+            messageInput.value = '';
+        });
+    </script>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chaining Animations Example</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+        }
+        #box {
+            width: 100px;
+            height: 100px;
+            background-color: #3498db;
+            position: relative;
+        }
+    </style>
+</head>
+<body>
+    <div id="box"></div>
+    <script>
+        const box = document.getElementById('box');
+
+        // First animation: Move the box
+        const moveAnimation = box.animate([
+            { transform: 'translateX(0px)' },
+            { transform: 'translateX(300px)' }
+        ], {
+            duration: 1000,
+            fill: 'forwards' // Keep the final state
+        });
+
+        // Wait for the first animation to finish
+        moveAnimation.onfinish = () => {
+            // Second animation: Rotate the box
+            box.animate([
+                { transform: 'rotate(0deg)' },
+                { transform: 'rotate(360deg)' }
+            ], {
+                duration: 1000,
+                fill: 'forwards'
+            });
+        };
+    </script>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notification API Example</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        button {
+            padding: 10px 15px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome to the Notification API Example</h1>
+    <p>This is a simple HTML page demonstrating how to use the Notification API.</p>
+    <button id="notifyBtn">Send Notification</button>
+
+    <script>
+        // Check for Notification permission
+        if (Notification.permission !== "granted") {
+            Notification.requestPermission();
+        }
+
+        document.getElementById("notifyBtn").addEventListener("click", function() {
+            if (Notification.permission === "granted") {
+                new Notification("Hello!", {
+                    body: "This is a notification from your HTML page.",
+                    icon: "https://via.placeholder.com/128" // Optional icon
+                });
+            } else {
+                alert("Notifications are not enabled. Please allow notifications in your browser settings.");
+            }
+        });
+    </script>
+</body>
+</html>

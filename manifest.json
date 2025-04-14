@@ -1,0 +1,10 @@
+{
+  "name": "Show URL Context Menu",
+  "description": "Displays the URL of the current website when an option is selected from the context menu.",
+  "version": "1.0",
+  "manifest_version": 3,
+  "permissions": ["activeTab"],
+  "background": {
+    "service_worker": "background.js"
+  }
+}
