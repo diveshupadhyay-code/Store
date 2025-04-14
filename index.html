@@ -1,289 +1,202 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Store</title>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Your Own App Store">
-    <meta name="keywords" content="store, apps, android, windows, games">
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link rel="stylesheet" href="store.css">
-    <link rel="Shortcut icon" type="image/x-icon" href="favicon.jpg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#000">
+    <meta name="description" content="Welcome to DIV Store, your one-stop shop for stunning web designs and templates.">
+    <meta name="keywords" content="web design, templates, online store, DIV Store">
+    <link rel="stylesheet" href="style/maincsswithme.css">
+    <link rel="stylesheet" href="style/style.css"> <!-- External CSS file -->
+    <title>DIV Store - Web Design Templates</title>
 </head>
-<body class="w3-light-grey w3-content" style="max-width:1600px">
-
-<!-- Sidebar/menu -->
-<nav class="w3-sidebar w3-collapse w3-grey w3-animate-left" style="z-index:3;width:300px;" id="mySidebar"><br>
-    <div class="w3-container">
-        <a href="#" onclick="w3_close()" class="w3-hide-large w3-right w3-jumbo w3-padding w3-hover-grey" title="close menu">
-            <i class="fa fa-remove"></i>
-        </a>
-        <img src="Image/Store.jpg" style="width:45%;" class="w3-circle w3-card-4"><br><br>
-        <h4><b>Store</b></h4>
-        <p>Your Own App</p>
-    </div>
-    <div class="w3-navbar">
-        <a href="#ANDROID" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-mobile fa-fw w3-margin-right"></i>ANDROID</a><br>
-        <a href="#WINDOWS" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-laptop fa-fw w3-margin-right"></i>WINDOWS</a><br>
-        <a href="#GAMES" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-gamepad fa-fw w3-margin-right"></i>GAMES</a><br>
-        <a href="https://forms.gle/BYz4EYEwscx9tEvH6" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-envelope fa-fw w3-margin-right"></i>CONTACT</a><br><br>
-        <a href="Signup.html" class="w3-button w3-red w3-card-4 w3-round-xlarge">Sign up</a><br><br>
-        <a href="Feedback.html" class="w3-button w3-card-4 w3-blue">Feedback</a><br><br>
-        <a href="report.html" class="btn btn-danger">Report</a>
-    </div>
-    <div class="w3-panel w3-xlarge">
-        <a href="https://www.facebook.com/happy.upadhyay.98031/"><i class="fa fa-facebook-official w3-hover-opacity w3-blue"></i></a>
-        <a href="https://www.instagram.com/diveshupadhyay_23/"><i class="fa fa-instagram w3-hover-opacity w3-pink"></i></a>
-        <a href="#"><i class="fa fa-snapchat w3-hover-opacity w3-yellow"></i></a>
-        <a href="#"><i class="fa fa-pinterest-p w3-hover-opacity w3-red"></i></a>
-        <a href="#"><i class="fa fa-twitter w3-hover-opacity w3-blue"></i></a>
-        <a href="#"><i class="fa fa-linkedin w3-hover-opacity w3-blue"></i></a>
-    </div>
-</nav>
-
-<!-- Overlay effect when opening sidebar on small screens -->
-<div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
-
-<!-- !PAGE CONTENT! -->
-<div class="w3-main" style="margin-left:300px">
-
-    <!-- Header -->
-    <header id="Store">
-        <a href="#"><img src="Image/Store.jpg" style="width:65px;" class="w3-circle w3-card-4 w3-right w3-margin w3-hide-large w3-hover-opacity"></a>
-        <span class="w3-button w3-hide-large w3-xxlarge w3-hover-text-grey" onclick="w3_open()"><i class="fa fa-bars"></i></span>
-        <div class="w3-container">
-            <h1><b>Store</b></h1>
-            <div class="w3-section w3-bottombar w3-padding-16">
-                <span class="w3-margin-right">Filter:</span>
-                <button class="w3-button w3-black">ALL</button>
-                <button class="w3-button w3-white"><i class="fa fa-mobile w3-margin-right"></i>New</button>
-                <button class="w3-button w3-white w3-hide-small"><i class="fa fa-laptop w3-margin-right"></i>Child</button>
-                <button class="w3-button w3-white w3-hide-small"><i class="fa fa-gamepad w3-margin-right"></i>Old</button>
-            </div>
-        </div>
+<body>
+    <header>
+        <h1 class="hd-bg m-1 div-txt-center" translate="no">DIV Store</h1>
+        <nav>
+            <ul>
+                <li><a href="#" aria-label="Go to Home page">Home</a></li>
+                <li><a href="#" aria-label="Learn more about us">About</a></li>
+                <li><a href="#" aria-label="Contact us">Contact</a></li>
+                <li><a href="#" aria-label="Shop our templates">Shop</a></li>
+                <li><a href="#" aria-label="User Profile">Profile</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <h2 class="w3-center w3-container">Recently Added</h2>
-    <div class="w3-content w3-section w3-bottombar w3-padding-16 w3-section" style="max-width:380px">
-        <a href="#WINDOWS"><img class="mySlides w3-card-4 w3-circle" src="Image/Opera.png" style="width:90%"></a>
-        <a href="#GAMES"><img class="mySlides w3-card-4" src="Image/Free Fire.jpg" style="width:100%"></a>
+    <div class="notification-bar">
+        <p>🎉 Special Offer: Get 15% off your first purchase! Use code: <strong>WELCOME15</strong></p>
     </div>
 
-    <div class="w3-card-4 w3-padding-large w3-section w3-bottombar w3-padding-16 w3-round-xlarge">
-        <h3 id="ANDROID"><b>ANDROID</b></h3>
-        <div class="row">
-            <div class="column">
-                <a href="#.html"><img src="Image/Snapchat.png" alt="Snapchat" style="width:100%" onclick="myFunction(this);"></a>
+    <main class="container">
+        <section class="user-profile">
+            <h2>User Profile</h2>
+            <div class="profile-info">
+                <svg class="profile-avatar" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+                    <defs>
+                        <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <stop offset="0%" style="stop-color:#4CAF50; stop-opacity:1" />
+                            <stop offset="100%" style="stop-color:#2E7D32; stop-opacity:1" />
+                        </linearGradient>
+                    </defs>
+                    <circle cx="50" cy="50" r="40" fill="url(#grad1)" stroke="#fff" stroke-width="3" />
+                    <text x="50%" y="50%" text-anchor="middle" fill="#fff" font-size="24" dy=".3em">U</text>
+                </svg>
+                <div class="user-info">
+                    <strong class="username-label">Username:</strong>
+                    <span class="username-value">diveshupadhyay</span>
+                    <p class="user-description">Welcome to your profile! Here you can manage your account settings and preferences.</p>
+                    <button class="btn" aria-label="Edit Profile" onclick="toggleEdit()">Edit Profile</button>
+                </div>
             </div>
-            <div class="column">
-                <a href="#.html"><img src="Image/Insta.jpg" alt="Instagram" style="width:100%" onclick="myFunction(this);"></a>
+            <div class="edit-profile" style="display: none;">
+                <h3>Edit Profile</h3>
+                <form id="profileForm">
+                    <label for="username">Username:</label>
+                    <input type="text" id="username" name="username" value="diveshupadhyay" required>
+                    
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" value="user@example.com" required>
+                    
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" placeholder="Enter new password">
+                    
+                    <button type="submit" class="btn" aria-label="Save Changes">Save Changes</button>
+                    <button type="button" class="btn" aria-label="Cancel" onclick="toggleEdit()">Cancel</button>
+                </form>
             </div>
-            <div class="column">
-                <a href="#.html"><img src="Image/more.png" alt="More Apps" class="avatar w3-circle w3-card-4">More</a>
-            </div>
-        </div>
-    </div>
+        </section>
 
-    <div class="w3-card-4 w3-section w3-bottombar w3-padding-16 w3-padding-large w3-round-xlarge">
-        <h3 id="GAMES"><b>GAMES</b></h3>
-        <div class="row">
-            <div class="column">
-                <a href="Storegames.html"><img src="Image/Freedom_fighters2.jpg" alt="Freedom Fighters" style="width:100%" onclick="myFunction(this);"></a>
+        <section class="offers">
+            <h2>Current Offers</h2>
+            <div class="offer">
+                <h3>Spring Sale!</h3>
+                <p>Get 20% off on all templates. Use code: <strong>SPRING20</strong></p>
+                <button class="btn" aria-label="Shop Now">Shop Now</button>
             </div>
-            <div class="column">
-                <a href="Storegames.html"><img src="Image/Free Fire.jpg" alt="Free Fire" style="width:100%" onclick="myFunction(this);"></a>
+            <div class="offer">
+                <h3>Buy One Get One Free!</h3>
+                <p>Purchase any template and get another one free. Limited time only!</p>
+                <button class="btn" aria-label="Shop Now">Shop Now</button>
             </div>
-            <div class="column">
-                <a href="Storegames.html"><img src="Image/more.png" alt="More Games" class="avatar w3-card-4 w3-circle">More</a>
+        </section>
+
+        <section class="template-list">
+            <h2>Our Web Design Templates</h2>
+            <div class="template">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 200">
+                    <rect width="300" height="200" fill="#4CAF50" />
+                    <text x="50%" y="50%" text-anchor="middle" fill="#fff" font-size="24" dy=".3em">Template 1</text>
+                </svg>
+                <h3>Template 1</h3>
+                <p>Modern and responsive design for your business.</p>
+                <p class="price">$49.99</p>
+                <button class="btn" aria-label="Buy Template 1">Buy Now</button>
             </div>
-        </div>
-    </div>
-
-    <div class="w3-card-4 w3-section w3-bottombar w3-padding-16 w3-padding-large w3-round-xlarge">
-        <h4 id="WINDOWS"><b>WINDOWS Software</b></h4>
-        <div class="row">
-            <div class="column">
-                <a href="Windows.html"><img src="Image/Telegram.png" alt="Telegram" style="width:100%" onclick="myFunction(this);"></a>
+            <div class="template">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 200">
+                    <rect width="300" height="200" fill="#FF9800" />
+                    <text x="50%" y="50%" text-anchor="middle" fill="#fff" font-size="24" dy=".3em">Template 2</text>
+                </svg>
+                <h3>Template 2</h3>
+                <p>Elegant design perfect for portfolios and blogs.</p>
+                <p class="price">$39.99</p>
+                <button class="btn" aria-label="Buy Template 2">Buy Now</button>
             </div>
-            <div class="column">
-                <a href="Windows.html"><img src="Image/Opera.png" alt="Opera Software" style="width:100%" onclick="myFunction(this);"></a>
+            <div class="template">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 200">
+                    <rect width="300" height="200" fill="#2196F3" />
+                    <text x="50%" y="50%" text-anchor="middle" fill="#fff" font-size="24" dy=".3em">Template 3</text>
+                </svg>
+                <h3>Template 3</h3>
+                <p>Creative design for startups and agencies.</p>
+                <p class="price">$59.99</p>
+                <button class="btn" aria-label="Buy Template 3">Buy Now</button>
             </div>
-            <div class="column">
-                <a href="Windows.html"><img src="Image/more.png" alt="More Software" class="avatar w3-circle w3-card-4">More</a>
+            <div class="template">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 200">
+                    <rect width="300" height="200" fill="#9C27B0" />
+                    <text x="50%" y="50%" text-anchor="middle" fill="#fff" font-size="24" dy=".3em">Template 4</text>
+                </svg>
+                <h3>Template 4</h3>
+                <p>Minimalistic design for personal blogs.</p>
+                <p class="price">$29.99</p>
+                <button class="btn" aria-label="Buy Template 4">Buy Now</button>
             </div>
-        </div>
-    </div>
+            <div class="template">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 200">
+                    <rect width="300" height="200" fill="#FF5722" />
+                    <text x="50%" y="50%" text-anchor="middle" fill="#fff" font-size="24" dy=".3em">Template 5</text>
+                </svg>
+                <h3>Template 5</h3>
+                <p>Bold and vibrant design for creative agencies.</p>
+                <p class="price">$69.99</p>
+                <button class="btn" aria-label="Buy Template 5">Buy Now</button>
+            </div>
+        </section>
 
-    <div class="w3-center w3-padding-32">
-        <div class="w3-bar">
-            <a href="#" class="w3-bar-item w3-button w3-hover-black">«</a>
-            <a href="#" class="w3-bar-item w3-black w3-button">1</a>
-            <a href="#" class="w3-bar-item w3-button w3-hover-black">2</a>
-            <a href="#" class="w3-bar-item w3-button w3-hover-black">3</a>
-            <a href="#" class="w3-bar-item w3-button w3-hover-black">4</a>
-            <a href="#" class="w3-bar-item w3-button w3-hover-black">»</a>
+        <div class="coupon">
+            <h3>Have a Coupon?</h3>
+            <input type="text" id="textInput" placeholder="Enter your coupon code" aria-label="Coupon code">
+            <button class="btn" onclick="speakText()" aria-label="Apply Coupon">Apply</button>
         </div>
-    </div>
+    </main>
 
-    <div class="w3-row-padding w3-padding-16" id="about">
-        <div class="w3-col m6">
-            <img src="/w3images/avatar_g.jpg" alt="Me" style="width:100%">
-        </div>
-        <div class="w3-col m6">
-            <img src="/w3images/me2.jpg" alt="Me" style="width:100%">
-        </div>
-    </div>
-
-    <div class="w3-container w3-padding-large" style="margin-bottom:32px">
-        <h4><b>About Me</b></h4>
-        <p>Just me, myself and I, exploring the universe of unknownment. I have a heart of love and an interest in lorem ipsum and mauris neque quam blog. I want to share my world with you. Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
-        <hr>
-
-        <h4>Technical Skills</h4>
-        <p>Photography</p>
-        <div class="w3-grey">
-            <div class="w3-container w3-dark-grey w3-padding w3-center" style="width:95%">95%</div>
-        </div>
-        <p>Web Design</p>
-        <div class="w3-grey">
-            <div class="w3-container w3-dark-grey w3-padding w3-center" style="width:85%">85%</div>
-        </div>
-        <p>Photoshop</p>
-        <div class="w3-grey">
-            <div class="w3-container w3-dark-grey w3-padding w3-center" style="width:80%">80%</div>
-        </div>
-        <p>
-            <button class="w3-button w3-dark-grey w3-padding-large w3-margin-top w3-margin-bottom">
-                <i class="fa fa-download w3-margin-right"></i>Download Resume
-            </button>
-        </p>
-        <hr>
-
-        <h4>How much I charge</h4>
-        <div class="w3-row-padding" style="margin:0 -16px">
-            <div class="w3-third w3-margin-bottom">
-                <ul class="w3-ul w3-border w3-white w3-center w3-opacity w3-hover-opacity-off">
-                    <li class="w3-black w3-xlarge w3-padding-32">Basic</li>
-                    <li class="w3-padding-16">Web Design</li>
-                    <li class="w3-padding-16">Photography</li>
-                    <li class="w3-padding-16">1GB Storage</li>
-                    <li class="w3-padding-16">Mail Support</li>
-                    <li class="w3-padding-16">
-                        <h2>$10</h2>
-                        <span class="w3-opacity">per month</span>
-                    </li>
-                    <li class="w3-light-grey w3-padding-24">
-                        <button class="w3-button w3-teal w3-padding-large w3-hover-black">Sign Up</button>
-                    </li>
+    <footer>
+        <div class="footer-content">
+            <div>
+                <h3>About Us</h3>
+                <p>We provide high-quality web design templates to help you create stunning websites.</p>
+            </div>
+            <div>
+                <h3>Contact Us</h3>
+                <p>If you have any questions, feel free to reach out!</p>
+                <p>Email: support@divstore.com</p>
+                <p>Phone: (123) 456-7890</p>
+            </div>
+            <div>
+                <h3>Other Pages</h3>
+                <ul>
+                    <li><a href="#" aria-label="Go to Home page">Home</a></li>
+                    <li><a href="#" aria-label="Learn more about us">About</a></li>
+                    <li><a href="#" aria-label="Contact us">Contact</a></li>
+                    <li><a href="#" aria-label="Shop our templates">Shop</a></li>
+                    <li><a href="#" aria-label="Read our blog">Blog</a></li>
                 </ul>
             </div>
-
-            <div class="w3-third w3-margin-bottom">
-                <ul class="w3-ul w3-border w3-white w3-center w3-opacity w3-hover-opacity-off">
-                    <li class="w3-teal w3-xlarge w3-padding-32">Pro</li>
-                    <li class="w3-padding-16">Web Design</li>
-                    <li class="w3-padding-16">Photography</li>
-                    <li class="w3-padding-16">50GB Storage</li>
-                    <li class="w3-padding-16">Endless Support</li>
-                    <li class="w3-padding-16">
-                        <h2>$25</h2>
-                        <span class="w3-opacity">per month</span>
-                    </li>
-                    <li class="w3-light-grey w3-padding-24">
-                        <button class="w3-button w3-teal w3-padding-large w3-hover-black">Sign Up</button>
-                    </li>
-                </ul>
-            </div>
-
-            <div class="w3-third">
-                <ul class="w3-ul w3-border w3-white w3-center w3-opacity w3-hover-opacity-off">
-                    <li class="w3-black w3-xlarge w3-padding-32">Premium</li>
-                    <li class="w3-padding-16">Web Design</li>
-                    <li class="w3-padding-16">Photography</li>
-                    <li class="w3-padding-16">Unlimited Storage</li>
-                    <li class="w3-padding-16">Endless Support</li>
-                    <li class="w3-padding-16">
-                        <h2>$40</h2>
-                        <span class="w3-opacity">per month</span>
-                    </li>
-                    <li class="w3-light-grey w3-padding-24">
-                        <button class="w3-button w3-teal w3-padding-large w3-hover-black">Sign Up</button>
-                    </li>
-                </ul>
+            <div>
+                <h3>Follow Us</h3>
+                <div class="social-icons">
+                    <a href="#" aria-label="Follow us on Facebook" target="_blank">Facebook</a>
+                    <a href="#" aria-label="Follow us on Twitter" target="_blank">Twitter</a>
+                    <a href="#" aria-label="Follow us on Instagram" target="_blank">Instagram</a>
+                </div>
             </div>
         </div>
-    </div>
-
-    <div class="w3-container w3-padding-large w3-grey">
-        <h4 id="contact"><b>Contact Me</b></h4>
-        <div class="w3-row-padding w3-center w3-padding-24" style="margin:0 -16px">
-            <div class="w3-third w3-dark-grey">
-                <p><i class="fa fa-envelope w3-xxlarge w3-text-light-grey"></i></p>
-            </div>
-            <div class="w3-third w3-teal">
-                <p><i class="fa fa-map-marker w3-xxlarge w3-text-light-grey"></i></p>
-            </div>
-            <div class="w3-third w3-dark-grey">
-                <p><i class="fa fa-phone w3-xxlarge w3-text-light-grey"></i></p>
-            </div>
-        </div>
-        <hr class="w3-opacity">
-        <form action="/action_page.php" target="_blank">
-            <div class="w3-section">
-                <label>Name</label>
-                <input class="w3-input w3-border" type="text" name="Name" required>
-            </div>
-            <div class="w3-section">
-                <label>Email</label>
-                <input class="w3-input w3-border" type="email" name="Email" required>
-            </div>
-            <div class="w3-section">
-                <label>Message</label>
-                <textarea class="w3-input w3-border" name="Message" required rows="4"></textarea>
-            </div>
-            <button type="submit" class="w3-button w3-black w3-margin-bottom"><i class="fa fa-paper-plane w3-margin-right"></i>Send Message</button>
-        </form>
-    </div>
-
-    <!-- Footer -->
-    <footer class="w3-container w3-padding-32 w3-dark-grey">
-        <div class="w3-row-padding">
-            <div class="w3-third">
-                <h3>Other pages</h3>
-                <ul class="w3-ul w3-hoverable">
-                    <li class="w3-padding-16">
-                        <img src="Ummeed.jpg" class="w3-left w3-margin-right" style="width:50px">
-                        <span class="w3-large">Ummeed</span><br>
-                        <span>Hope For Helpless</span>
-                    </li>
-                </ul>
-            </div>
-
-            <div class="w3-third">
-                <h3>POPULAR Posts</h3>
-                <p>
-                    <span class="w3-tag w3-black w3-margin-bottom">ANDROID</span>
-                    <span class="w3-tag w3-grey w3-small w3-margin-bottom">Instagram</span>
-                    <span class="w3-tag w3-grey w3-small w3-margin-bottom">Snapchat</span>
-                    <span class="w3-tag w3-black w3-small w3-margin-bottom">WINDOWS</span>
-                    <span class="w3-tag w3-grey w3-small w3-margin-bottom">Telegram</span>
-                    <span class="w3-tag w3-grey w3-small w3-margin-bottom">Opera</span>
-                    <span class="w3-tag w3-black w3-small w3-margin-bottom">Games</span>
-                    <span class="w3-tag w3-grey w3-small w3-margin-bottom">Free Fire</span>
-                    <span class="w3-tag w3-grey w3-small w3-margin-bottom">Freedom Fighter</span>
-                </p>
-            </div>
-        </div>
+        <p>&copy; 2024 DIV Store. All rights reserved.</p>
     </footer>
 
-    <div class="w3-black w3-center w3-padding-24">Powered by <a href="" title="Store" target="_blank" class="w3-hover-opacity">Store</a></div>
-</div>
-
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-<script src="script.js"></script> <!-- link your custom script -->
+    <script>
+        function toggleEdit() {
+            const profileInfo = document.querySelector('.profile-info');
+            const editProfile = document.querySelector('.edit-profile');
+            
+            if (profileInfo.style.display === "none") {
+                profileInfo.style.display = "flex";
+                editProfile.style.display = "none";
+            } else {
+                profileInfo.style.display = "none";
+                editProfile.style.display = "block";
+            }
+        }
+    </script>
+    <script>
+        function speakText() {
+            var input = document.getElementById('textInput');
+            var textInput = input.value;
+            const utterance = new SpeechSynthesisUtterance(textInput);
+            window.speechSynthesis.speak(utterance);
+        }
+        </script>
 </body>
 </html>
